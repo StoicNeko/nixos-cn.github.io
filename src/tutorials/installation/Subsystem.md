@@ -354,7 +354,8 @@ vim /mnt/etc/nixos/configuration.nix
         efi = {
             canTouchEfiVariables = true;
             efiSysMountPoint = "/boot";
-            grub = {
+};
+         grub = {
                 enable = true;
                 device = "nodev";
                 efiSupport = true;
@@ -366,7 +367,7 @@ vim /mnt/etc/nixos/configuration.nix
                 '';
             };
         };
-    };
+
     networking = {
         hostName = "nixos";
         networkmanager.enable = true;
